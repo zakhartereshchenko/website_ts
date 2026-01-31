@@ -21,7 +21,7 @@ export const Experience = () => {
     },[])
 
     return (
-        <SectionBase title="Experience.">
+        <SectionBase title="Experience." id="experience">
             <div className={styles.container}>
                 <Timeline active={3} bulletSize={40} lineWidth={2}>
                     {experienceList}

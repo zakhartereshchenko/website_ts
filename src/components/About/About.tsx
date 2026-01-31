@@ -51,7 +51,7 @@ export const About: React.FC = () => {
     },[])
 
     return (
-        <SectionBase title="Overview.">
+        <SectionBase title="Overview." id="about">
             <div className={styles.container}>
                 <div className={styles.imageContainer}>
                     <img src={photo} alt="photo" className={styles.image} />

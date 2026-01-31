@@ -22,7 +22,12 @@ import LinkedinIcon from './assets/linkedin.svg'
 const linkedinUrl = 'https://www.linkedin.com/in/zakhartereshchenko/'
 const githubUrl = 'https://github.com/zakhartereshchenko'
 
-export const headerItems = [{label: 'About'},{label: 'Skills'},{label: 'Portfolio'},{label: 'Education'},{label: 'Contact'}]
+export const headerItems = [
+    {label: 'About', href: '#about'},
+    {label: 'Skills', href: '#skills'},
+    {label: 'Portfolio', href: '#portfolio'},
+    {label: 'Experience', href: '#experience'},
+]
 
 export const LINKS = [
     {label: 'Resume', url: '../../public/cv.pdf', icon: CvIcon},

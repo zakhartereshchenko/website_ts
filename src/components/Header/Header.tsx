@@ -18,11 +18,12 @@ export const Header: React.FC = () => {
         }
         return <Moon />
     },[mode])
+
     return (
         <header className={styles.header}>
             <ul className={styles.headerList}>
                 {headerItems.map((item) => (
-                    <HeaderItem key={item.label} label={item.label} />
+                    <HeaderItem key={item.label} label={item.label} href={item.href} />
                 ))}
             </ul>
             <ActionIcon

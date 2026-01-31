@@ -18,7 +18,7 @@ export const Skills = () => {
         ))
     },[])
     return (
-        <SectionBase title="Skills.">
+        <SectionBase title="Skills." id="skills">
             <ul className={styles.list}>
                 {iconsList}
             </ul>
