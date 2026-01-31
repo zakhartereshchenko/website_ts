@@ -1,0 +1,17 @@
+@use "./global.scss" as *;
+
+:root {
+  --bg-color: #{$light-theme-bg-color};
+  --text-main: #{$ebony};
+  --text-secondary: #{$grey-text};
+  --accent: #{$accent-color};
+  --divider: #{$divider-light-color};
+}
+
+[data-theme='dark'] {
+  --bg-color: #{$dark-theme-bg-color};
+  --text-main: #{$white};
+  --text-secondary: #aaaaaa;
+  --divider: #{$divider-dark-color};
+  --accent: #ff009d;
+}

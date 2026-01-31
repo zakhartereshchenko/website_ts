@@ -1,0 +1,22 @@
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 7rem;
+    row-gap: 1rem;
+    justify-content: center;
+
+    .listItem{
+        width: fit-content;
+
+        .icon{
+            width: 100%;
+            transition: filter 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                filter: drop-shadow(0 0 4px #10151f);
+                transform: scale(1.05);
+            }
+        }
+    }
+}

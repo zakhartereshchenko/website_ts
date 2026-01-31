@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listItem{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.imageContainer{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: fit-content;
+
+    Button {
+        width: 150px;
+
+        .icon{
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 5px;
+            filter: brightness(0) invert(1);
+        }
+    }
+}

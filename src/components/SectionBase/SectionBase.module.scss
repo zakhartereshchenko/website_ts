@@ -1,0 +1,12 @@
+.container {
+    width: $section-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 50px;
+}
+.title {
+    width: fit-content;
+    margin: 0 auto;
+}
