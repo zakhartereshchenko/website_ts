@@ -15,9 +15,11 @@ import MySqlIcon from './assets/mysql.svg'
 import EmployeesListImg from './assets/employees-list.png'
 import MarvelImg from './assets/marvel.png'
 import TodoListImg from './assets/todo-list.png'
-import CvIcon from './assets/cv-icon.svg'
 import GithubIcon from './assets/github.svg'
 import LinkedinIcon from './assets/linkedin.svg'
+
+import { Book, CodeXml, Laptop, Users } from 'lucide-react';
+
 
 const linkedinUrl = 'https://www.linkedin.com/in/zakhartereshchenko/'
 const githubUrl = 'https://github.com/zakhartereshchenko'
@@ -30,9 +32,28 @@ export const headerItems = [
 ]
 
 export const LINKS = [
-    {label: 'Resume', url: '../../public/cv.pdf', icon: CvIcon},
+    {label: 'Resume', url: '../../public/cv.pdf', icon: null},
     {label: 'GitHub', url: githubUrl, icon: GithubIcon},
     {label: 'LinkedIn', url: linkedinUrl, icon: LinkedinIcon}
+]
+
+export const ABOUT_INFO = [
+    {
+        text: "Commercial Experience: 1 year of building features in product-led environments.",
+        icon: <Laptop />
+    },
+    {
+        text: "Collaborative Mindset: Proactive team player working closely with Designers, QA, and Backend engineers.",
+        icon: <Users />
+    },
+    {
+        text: "Tech Versatility: Proficient in React (Hooks, Redux), with little experience in React Native.",
+        icon: <CodeXml />
+    },
+    {
+        text: "Growth-Oriented: Constantly evolving - currently mastering Next.js on my path to Fullstack development.",
+        icon: <Book />
+    },
 ]
 
 export const SKILL_ICONS_LIST = [

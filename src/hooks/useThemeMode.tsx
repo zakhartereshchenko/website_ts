@@ -11,7 +11,7 @@ const ThemeModeContext = createContext<ThemeModeContextValue | undefined>(undefi
 export const ThemeModeProvider = ({ children }: { children: ReactNode }) => {
   const [mode, setMode] = useState<ThemeMode>(() => {
     const saved = localStorage.getItem('theme-mode') as ThemeMode;
-    const initialMode = saved || ThemeMode.Light;
+    const initialMode = saved || ThemeMode.Dark;
     document.documentElement.setAttribute('data-theme', initialMode);
     return initialMode;
   });

@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
 
     const themeIconButton = useMemo(()=>{
         if(mode === ThemeMode.Dark){
-            return <Sun color="yellow"/>
+            return <Sun color="white"/>
         }
         return <Moon />
     },[mode])

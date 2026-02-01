@@ -11,7 +11,7 @@
 [data-theme='dark'] {
   --bg-color: #{$dark-theme-bg-color};
   --text-main: #{$white};
-  --text-secondary: #aaaaaa;
+  --text-secondary: #{$grey-text};
   --divider: #{$divider-dark-color};
-  --accent: #ff009d;
+  --accent: #{$accent-color-2};
 }

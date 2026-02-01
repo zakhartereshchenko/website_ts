@@ -1,33 +1,17 @@
 import { useMemo } from 'react';
-import { CodeXml, Laptop, Lightbulb } from 'lucide-react';
 import { Button } from '@mantine/core';
 
 import photo from '../../assets/photo-1.jpg';
-import { SectionBase } from '../SectionBase/SectionBase';
 
+import { SectionBase } from '../SectionBase/SectionBase';
 import { Icon } from '..';
-import { LINKS } from '../../constants';
+import { ABOUT_INFO, LINKS } from '../../constants';
 
 import styles from './About.module.scss';
 
-const aboutInfo = [
-    {
-        text: "I'm a frontend developer with a strong drive to grow into a full-stack developer.",
-        icon: <Laptop />
-    },
-    {
-        text: "I love building clean, responsive interfaces and turning tricky design ideas into smooth, usable websites that just feel right.",
-        icon: <CodeXml />
-    },
-    {
-        text: "I'm always curious and constantly learning.",
-        icon: <Lightbulb />
-    }
-]
-
 export const About: React.FC = () => {
     const listItems = useMemo(()=>{
-        return aboutInfo.map((info, index)=>(
+        return ABOUT_INFO.map((info, index)=>(
             <li key={index} className={styles.listItem}>
                 <Icon size="small">
                     {info.icon}
@@ -43,7 +27,7 @@ export const About: React.FC = () => {
         return LINKS.map((link, index)=>(
             <a href={link.url} key={index} target="_blank" rel="noreferrer">
                 <Button variant="filled">
-                    <img src={link.icon} alt={link.label} className={styles.icon} />
+                    {link.icon && <img src={link.icon} alt={link.label} className={styles.icon} />}
                     {link.label}
                 </Button>
             </a>
