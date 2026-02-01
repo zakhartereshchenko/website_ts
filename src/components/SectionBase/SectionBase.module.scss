@@ -1,10 +1,12 @@
 .container {
-    width: $section-width;
+    max-width: $section-width;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 50px;
+    padding: 0 20px;
 }
 .title {
     width: fit-content;

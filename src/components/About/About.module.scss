@@ -3,13 +3,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+
+    @media (max-width: 1000px){
+        flex-direction: column;
+    }
 }
 
 .information {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
-    width: 600px;
+    max-width: 600px;
 }
 
 .list {
@@ -37,6 +43,10 @@
     flex-direction: row;
     gap: 20px;
     width: fit-content;
+
+    @media (max-width: 1000px){
+        margin: 0 auto;
+    }
 
     Button {
         width: 150px;

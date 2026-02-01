@@ -27,8 +27,8 @@ const githubUrl = 'https://github.com/zakhartereshchenko'
 export const headerItems = [
     {label: 'About', href: '#about'},
     {label: 'Skills', href: '#skills'},
-    {label: 'Portfolio', href: '#portfolio'},
     {label: 'Experience', href: '#experience'},
+    {label: 'Portfolio', href: '#portfolio'},
 ]
 
 export const LINKS = [
