@@ -24,6 +24,14 @@
             display: flex;
             gap: 1rem;
             margin-top: auto;
+            @media (max-width: 600px){
+                a{
+                    width: 100%;
+                    Button{
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

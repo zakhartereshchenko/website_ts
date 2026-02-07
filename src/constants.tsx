@@ -12,6 +12,7 @@ import BootstrapIcon from './assets/bootstrap.svg'
 import WebpackIcon from './assets/webpack.svg'
 import MySqlIcon from './assets/mysql.svg'
 
+import Mp3PlayerImg from './assets/mp3player.png'
 import EmployeesListImg from './assets/employees-list.png'
 import MarvelImg from './assets/marvel.png'
 import TodoListImg from './assets/todo-list.png'
@@ -94,6 +95,12 @@ export const EXPERIENCE = [
 ]
 
 export const PORTFOLIO = [
+    {
+        logo: Mp3PlayerImg,
+        title: 'MP3 Player',
+        description: 'MP3 Player created to practice Web Audio API. In this app you can upload your own music files and listen to them.',
+        links: [{label: 'Live demo',url:'https://mp3-player-sigma.vercel.app/'},{label: 'Source code',url:'https://github.com/zakhartereshchenko/mp3-player'}]
+    },
     {
         logo: EmployeesListImg,
         title: 'Employees list project.',
